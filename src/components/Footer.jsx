@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import Angle from "../images/angle-up.svg";
+import Logo from "../images/logo-white.svg";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles["footer__top"]}>
         <a className={styles["footer__logo"]} href="#">
-          <img src="images/logo-white.svg" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </a>
         <ul className={styles["footer_social"]}>
           <li className={styles["footer_social-list"]}>
@@ -52,7 +54,7 @@ const Footer = () => {
           </a>
         </div>
         <a className={styles["go-top"]} href="#body">
-          <img src="images/angle-up.svg" alt="arrow top" />
+          <img src={Angle} alt="arrow top" />
         </a>
       </div>
       <div className={styles["footer__copy"]}>

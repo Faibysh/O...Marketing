@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
+import mouse from "../images/mouse.svg";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
             className={styles["header__icon"]}
             href="https://faibysh.github.io/marketing/"
           >
-            <img src="/images/mouse.svg" alt="mouse icon" />
+            <img src={mouse} alt="mouse icon" />
           </a>
         </div>
       </div>

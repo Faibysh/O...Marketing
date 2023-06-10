@@ -69,12 +69,36 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1.65px;
+  color: #242121;
+  padding-bottom: 18px;
+  position: relative;
+  align-self: flex-start;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #FCBB08;
+  bottom: 0;
+  left: 0;
+
+}
+
 .connection {
   padding: 145px 0 160px;
   background-image: url('../images/map.jpg');
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: right 65%;
+  background-color: #F6F8FA;
 }
 
 .connection__title {
@@ -91,10 +115,11 @@ body {
   display: block;
   width: 100%;
   border-bottom: 2px solid #373A39;
-  padding: 16px 0;
+  padding: 10px;
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: bold;
+  background-color: #F6F8FA;
 }
 
 .form input::placeholder,
@@ -110,6 +135,7 @@ body {
 .form textarea {
   min-height: 140px;
   resize: none;
+  padding: 5px;
 }
 
 .form button {

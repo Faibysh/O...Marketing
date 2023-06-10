@@ -69,6 +69,29 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1.65px;
+  color: #242121;
+  padding-bottom: 18px;
+  position: relative;
+  align-self: flex-start;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #FCBB08;
+  bottom: 0;
+  left: 0;
+
+}
+
 .header__content {
   margin-top: 100px;
   background-image: url('../images/header-bg.jpg');

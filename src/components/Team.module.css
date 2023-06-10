@@ -69,6 +69,29 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1.65px;
+  color: #242121;
+  padding-bottom: 18px;
+  position: relative;
+  align-self: flex-start;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #FCBB08;
+  bottom: 0;
+  left: 0;
+
+}
+
 .team {
   padding: 120px 0 130px;
 
@@ -100,74 +123,6 @@ body {
   color: #373A39;
 }
 
-.pricing {
-  background-color: #F6F8FA;
-  padding: 145px 0 160px;
-}
-
-.pricing__title {
-  margin-bottom: 90px;
-}
-
-.pricing__items {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-ul.pricing__item {
-  background-color: #fff;
-  text-align: center;
-  padding: 24px 25px 50px;
-  width: 370px;
-}
-
-.pricing__item li {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: #242121;
-  margin-bottom: 30px;
-
-}
-
-.pricing__item .pricing__item-name {
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.pricing__item .pricing__item-num {
-  font-size: 80px;
-  line-height: 109px;
-  margin-bottom: 50px;
-}
-
-.pricing__item-num sup {
-  font-size: 40px;
-  line-height: 54px;
-}
-
-.pricing__item-link {
-  margin-top: 70px;
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1.2px;
-  font-family: 'Montserrat', sans-serif;
-  color: #242121;
-}
-
-.clients {
-  padding: 70px 0 95px;
-}
-
-.clients__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 @media (max-width: 1440px) {
   .magic__inner {
