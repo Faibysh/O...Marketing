@@ -1,10 +1,14 @@
+import styles from "./About.module.css";
+
 const About = () => {
   return (
-    <section className="about" id="about">
-      <div className="container">
-        <div className="about__inner">
-          <h2 className="title about__title">About Us</h2>
-          <div className="about__text">
+    <section className={styles.about} id="about">
+      <div className={styles.container}>
+        <div className={styles["about__inner"]}>
+          <h2 className={`${styles.title} ${styles["about__title"]}`}>
+            About Us
+          </h2>
+          <div className={styles["about__text"]}>
             <p>
               Practice shows that great sales do not always depend on how much
               you spend on site promotion and advertising campaign. The final
@@ -21,24 +25,26 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <h2 className="title expertise__title">Our Expertise</h2>
-        <div className="expertise__inner">
-          <div className="expertise__info">
-            <div className="expertise__info-item">
+      <div className={styles.container}>
+        <h2 className={`${styles.title} ${styles["expertise__title"]}`}>
+          Our Expertise
+        </h2>
+        <div className={styles["expertise__inner"]}>
+          <div className={styles["expertise__info"]}>
+            <div className={styles["expertise__info-item"]}>
               BRANDING
               <span style={{ width: "calc(100% - 90%)" }}>90%</span>
             </div>
-            <div className="expertise__info-item">
+            <div className={styles["expertise__info-item"]}>
               DESIGN
               <span style={{ width: "calc(100% - 80%)" }}>80%</span>
             </div>
-            <div className="expertise__info-item">
+            <div className={styles["expertise__info-item"]}>
               DEVELOPMENT
               <span style={{ width: "calc(100% - 85%)" }}>85%</span>
             </div>
           </div>
-          <div className="expertise__text">
+          <div className={styles["expertise__text"]}>
             <p>
               Internet marketing strategy includes the creation of an image and
               advertising concept, the development of content strategy,
@@ -51,36 +57,44 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="expertise__items">
-          <div className="expertise__item expertise__item--design">
-            <h4 className="expertise__item-title">GRAPHIC DESIGN</h4>
-            <p className="expretise__item-text">
+        <div className={styles["expertise__items"]}>
+          <div
+            className={`${styles["expertise__item"]} ${styles["expertise__item--design"]}`}
+          >
+            <h4 className={styles["expertise__item-title"]}>GRAPHIC DESIGN</h4>
+            <p className={styles["expretise__item-text"]}>
               Advertising design, package design, labels, leaflets, catalogs,
               development of presentations, design of exhibition stands stands
             </p>
           </div>
 
-          <div className="expertise__item expertise__item--dev">
-            <h4 className="expertise__item-title">WEB DEVELOPMENT</h4>
-            <p className="expertise__item-text">
+          <div
+            className={`${styles["expertise__item"]} ${styles["expertise__item--dev"]}`}
+          >
+            <h4 className={styles["expertise__item-title"]}>WEB DEVELOPMENT</h4>
+            <p className={styles["expertise__item-text"]}>
               We develop websites from concept to implementation. Design,
               layout, programming and launching the site in the network
             </p>
           </div>
 
-          <div className="expertise__item expertise__item--marketing">
-            <h4 className="expertise__item-title">MARKETING</h4>
-            <p className="expretise__item-text">
+          <div
+            className={`${styles["expertise__item"]} ${styles["expertise__item--marketing"]}`}
+          >
+            <h4 className={styles["expertise__item-title"]}>MARKETING</h4>
+            <p className={styles["expretise__item-text"]}>
               We develop marketing and advertising promotion of your product or
               service on a turnkey basis and on any budget.
             </p>
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="magic__inner">
-          <h2 className="title magic__title">Let’s make magic.</h2>
-          <div className="magic__text">
+      <div className={styles.container}>
+        <div className={styles["magic__inner"]}>
+          <h2 className={`${styles.title} ${styles["magic__title"]}`}>
+            Let’s make magic.
+          </h2>
+          <div className={styles["magic__text"]}>
             <p>
               Marketing agency MGN: full range of marketing, advertising and
               design services in Kharkov and Ukraine: marketing research of

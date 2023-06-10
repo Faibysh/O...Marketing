@@ -1,15 +1,20 @@
+import React from "react";
+import styles from "./Home.module.css";
+
 const Home = () => {
   return (
-    <div className="header__content">
-      <div className="container">
-        <div className="header__content-inner">
-          <h1 className="header__title">O...MARKETING</h1>
-          <h4 className="header__subtitle">DIGITAL MARKETING AGENCY</h4>
+    <div className={styles["header__content"]}>
+      <div className={styles.container}>
+        <div className={styles["header__content-inner"]}>
+          <h1 className={styles["header__title"]}>O...MARKETING</h1>
+          <h4 className={styles["header__subtitle"]}>
+            DIGITAL MARKETING AGENCY
+          </h4>
           <a
-            className="header__icon"
+            className={styles["header__icon"]}
             href="https://faibysh.github.io/marketing/"
           >
-            <img src="images/mouse.svg" alt="mouse icon" />
+            <img src="/images/mouse.svg" alt="mouse icon" />
           </a>
         </div>
       </div>

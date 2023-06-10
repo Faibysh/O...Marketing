@@ -1,10 +1,15 @@
+import styles from "./Header.module.css";
+
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header__top">
-        <div className="container">
-          <div class="header__top-inner">
-            <a class="logo" href="https://faibysh.github.io/marketing/">
+    <header className={styles.header}>
+      <div className={styles["header__top"]}>
+        <div className={styles.container}>
+          <div className={styles["header__top-inner"]}>
+            <a
+              className={styles.logo}
+              href="https://faibysh.github.io/marketing/"
+            >
               <svg
                 width="80"
                 height="64"
@@ -22,8 +27,8 @@ const Header = () => {
                 />
               </svg>
             </a>
-            <nav class="menu">
-              <button class="menu__btn">
+            <nav className={styles.menu}>
+              <button className={styles["menu__btn"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -36,34 +41,34 @@ const Header = () => {
                   <rect y="16" width="30" height="2" fill="black"></rect>
                 </svg>
               </button>
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#body">
+              <ul className={styles["menu__list"]}>
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#body">
                     HOME
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#about">
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#about">
                     ABOUT US
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#portfolio">
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#portfolio">
                     PORTFOLIO
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#team">
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#team">
                     OUR TEAM
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#blog">
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#blog">
                     BLOG
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#contact">
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#contact">
                     CONTACT
                   </a>
                 </li>
