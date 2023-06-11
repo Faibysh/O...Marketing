@@ -24,14 +24,14 @@ const Expertise = () => {
           </div>
           <div className={styles["expertise__text"]}>
             <p>
-              Internet marketing strategy includes the creation of an image and
-              advertising concept, the development of content strategy,
-              distribution of the use of various communication channels.
+              In an Internet marketing strategy, we create an image and
+              advertising concept, develop a content strategy, and leverage
+              diverse communication channels for distribution purposes.
             </p>
             <p>
-              Implement the adopted strategy, monitoring interim results, and
-              adjusting future actions to reflect changes. The main goal in this
-              process for us is the end result, not following the plans.
+              We prioritize the desired end result in implementing the strategy,
+              adjusting future actions based on interim results and changes,
+              rather than rigidly following predefined plans.
             </p>
           </div>
         </div>

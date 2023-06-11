@@ -10,18 +10,27 @@ const Magic = () => {
           </h2>
           <div className={styles["magic__text"]}>
             <p>
-              Marketing agency O...Marketing: full range of marketing,
-              advertising and design services in Lviv and Ukraine: marketing
-              research of markets, goods, consumers, marketing complex planning,
-              advertising, advertising holding advertising campaigns, branding,
-              advertising design, pr.
+              B...Marketing: Your provider of integrated marketing solutions
+              worldwide
             </p>
             <p>
-              We have a lot of experience in real business, in a variety of
-              industries - from real estate to pharmacy and medical business. We
-              don't just solve our clients' problems, we came out of the
-              business environment ourselves and and understand the essence of
-              business processes.
+              At B...Marketing, we offer a wide range of top-notch marketing,
+              advertising, and design services tailored to meet your business
+              needs. Our expertise extends to conducting thorough market
+              research, analyzing consumer behavior, and developing
+              comprehensive marketing plans. We excel in executing impactful
+              advertising campaigns, creating memorable branding strategies, and
+              delivering exceptional advertising design. Additionally, we
+              specialize in public relations services.
+            </p>
+            <p>
+              What sets us apart is our extensive experience in various
+              industries, ranging from real estate to pharmaceuticals and
+              medical businesses. Unlike other agencies, we don't simply solve
+              our clients' problems; we have firsthand experience operating
+              within the business environment. This unique perspective allows us
+              to truly understand the essence of business processes and provide
+              effective solutions that drive growth and success.
             </p>
             <p>We speak the same language as the business!</p>
           </div>

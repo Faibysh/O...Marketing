@@ -92,14 +92,13 @@ body {
 
 }
 
-
 .slider-blog {
   background-color: #F8F6FA;
   padding: 115px 0;
 }
 
 .slider-blog__item {
-  padding: 190px 150px;
+  padding: 190px 0;
 }
 
 .slider-blog__item-title {

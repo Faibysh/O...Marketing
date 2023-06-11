@@ -10,17 +10,26 @@ const About = () => {
           </h2>
           <div className={styles["about__text"]}>
             <p>
-              Practice shows that great sales do not always depend on how much
-              you spend on site promotion and advertising campaign. The final
-              result depends much more on the correct organization of the
-              campaign. We reach maximum efficiency and help to save our
-              clients' budgets by using strategic Internet marketing.
+              Actual experience has demonstrated that achieving impressive sales
+              outcomes is not solely contingent upon the financial investment in
+              site promotion and advertising campaigns. Instead, the ultimate
+              success largely hinges on the precise orchestration of the
+              campaign itself. Through the implementation of strategic Internet
+              marketing techniques, we ensure optimal efficiency and
+              cost-effectiveness, enabling our clients to achieve their desired
+              outcomes while saving valuable resources.
             </p>
             <p>
-              Define the purpose of promotion - what our client wants to get,
-              when the work is done. Conduct marketing Research the market, the
-              target audience, the competitive environment. In developing a
-              strategy we take into account all the available data.
+              To ensure a successful promotion, we begin by clearly defining our
+              client's objectives and desired outcomes. This enables us to align
+              our efforts with their specific goals and expectations.
+              Additionally, we conduct comprehensive market research, delving
+              into the intricacies of the market, target audience, and
+              competitive landscape. By analyzing all available data, we gain
+              valuable insights that inform the development of our strategy.
+              Taking into account this wealth of information, we craft a
+              well-rounded and data-driven approach that maximizes the
+              effectiveness of our promotional efforts.
             </p>
           </div>
         </div>

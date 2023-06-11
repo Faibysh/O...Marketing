@@ -127,6 +127,7 @@ ul.pricing__item {
   text-align: left;
   font-weight: bold;
   margin-bottom: 8px;
+  padding-left: 25px;
 }
 
 .pricing__item .pricing__item-num {

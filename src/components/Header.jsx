@@ -6,10 +6,7 @@ const Header = () => {
       <div className={styles["header__top"]}>
         <div className={styles.container}>
           <div className={styles["header__top-inner"]}>
-            <a
-              className={styles.logo}
-              href="https://faibysh.github.io/marketing/"
-            >
+            <a className={styles.logo} href="#">
               <svg
                 width="80"
                 height="64"
@@ -58,15 +55,16 @@ const Header = () => {
                   </a>
                 </li>
                 <li className={styles["menu__list-item"]}>
-                  <a className={styles["menu__list-link"]} href="#team">
-                    OUR TEAM
-                  </a>
-                </li>
-                <li className={styles["menu__list-item"]}>
                   <a className={styles["menu__list-link"]} href="#blog">
                     BLOG
                   </a>
                 </li>
+                <li className={styles["menu__list-item"]}>
+                  <a className={styles["menu__list-link"]} href="#team">
+                    OUR TEAM
+                  </a>
+                </li>
+
                 <li className={styles["menu__list-item"]}>
                   <a className={styles["menu__list-link"]} href="#contact">
                     CONTACT
