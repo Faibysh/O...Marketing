@@ -12,7 +12,7 @@ import Pricing from "./components/Pricing";
 import Team from "./components/Team";
 
 const App = () => (
-  <div>
+  <>
     <Header />
     <Home />
     <About />
@@ -25,7 +25,7 @@ const App = () => (
     <Clients />
     <Contact />
     <Footer />
-  </div>
+  </>
 );
 
 export default App;

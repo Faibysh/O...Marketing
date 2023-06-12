@@ -4,7 +4,7 @@ import mouse from "../images/mouse.png";
 
 const Home = () => {
   return (
-    <div className={styles["header__content"]}>
+    <div id="home" className={styles["header__content"]}>
       <div className={styles.container}>
         <div className={styles["header__content-inner"]}>
           <h1 className={styles["header__title"]}>B...MARKETING</h1>

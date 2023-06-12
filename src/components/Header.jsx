@@ -40,7 +40,7 @@ const Header = () => {
               </button>
               <ul className={styles["menu__list"]}>
                 <li className={styles["menu__list-item"]}>
-                  <a className={styles["menu__list-link"]} href="#body">
+                  <a className={styles["menu__list-link"]} href="#home">
                     HOME
                   </a>
                 </li>
