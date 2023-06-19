@@ -109,6 +109,8 @@ body {
   align-items: flex-end;
 }
 
+.logo {}
+
 .menu__btn {
   display: none;
 }

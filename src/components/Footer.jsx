@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Angle from "../images/angle-up.svg";
-import Logo from "../images/logo-white.svg";
+import Logo from "../images/logo-white1.svg";
 
 const Footer = () => {
   return (
