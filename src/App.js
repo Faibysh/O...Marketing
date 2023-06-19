@@ -1,3 +1,6 @@
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import About from "./components/About";
 import Blog from "./components/Blog";
 import Clients from "./components/Clients";
@@ -25,6 +28,7 @@ const App = () => (
     <Clients />
     <Contact />
     <Footer />
+    <ToastContainer />
   </>
 );
 

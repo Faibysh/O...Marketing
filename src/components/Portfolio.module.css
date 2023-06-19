@@ -131,6 +131,7 @@ body {
 .portfolio__content {
   column-count: 4;
   column-gap: 24px;
+  margin-bottom: 50px;
 
 }
 
@@ -167,6 +168,7 @@ body {
 
 .portfolio__item img {
   width: 100%;
+
 }
 
 .portfolio__add {

@@ -95,33 +95,49 @@ body {
 .slider-blog {
   background-color: #F8F6FA;
   padding: 115px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-blog__item {
   padding: 190px 0;
+  position: relative;
+  text-align: center;
+}
+
+.slider-blog__item img {
+  display: block;
+  margin: 0 auto;
+  width: 900px;
+  height: 550px;
 }
 
 .slider-blog__item-title {
+  max-width: 900px;
   font-weight: 700;
   font-size: 36px;
   line-height: 52px;
   color: #242121;
   margin-bottom: 10px;
-  max-width: 675px;
   display: inline-block;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .slider-blog__item-descr {
+  max-width: 900px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #373A39;
-  max-width: 585px;
+  margin: 0 auto 50px;
+  text-align: center;
 }
+
 
 .slick-dots {
   display: flex;
-
 }
 
 .slick-dots button {
@@ -133,7 +149,6 @@ body {
   font-size: 0;
   padding: 0;
   border: none;
-
 }
 
 .slick-dots li+li {
@@ -145,7 +160,6 @@ body {
   width: 10px;
   height: 10px;
   transform: translateY(-2px);
-
 }
 
 .slick-prev,
@@ -156,15 +170,16 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-150%);
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .slick-prev {
-  left: -95px;
+  left: 0;
 }
 
 .slick-next {
-  right: -95px;
+  right: 0;
 }
 
 @media (max-width: 1440px) {

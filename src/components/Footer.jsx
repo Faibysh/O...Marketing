@@ -46,6 +46,7 @@ const Footer = () => {
         </ul>
         <div className={styles["footer__contact"]}>
           <address className={styles.address}>Ukraine, Lviv</address>
+          <address className={styles.address}>Poland, Crakow</address>
           <a className={styles.phone} href="tel:+48577439826">
             +48 577 439 826
           </a>
@@ -53,12 +54,12 @@ const Footer = () => {
             faybysh.b@gmail.com
           </a>
         </div>
-        <a className={styles["go-top"]} href="#body">
+        <a className={styles["go-top"]} href="#home">
           <img src={Angle} alt="arrow top" />
         </a>
       </div>
       <div className={styles["footer__copy"]}>
-        <p>@2023 O...Marketing</p>
+        <p>@2023 B...Marketing</p>
       </div>
     </footer>
   );

@@ -110,12 +110,32 @@ const Portfolio = () => {
       </blockquote>
 
       <div className={styles["portfolio__video"]}>
-        <img
-          className={styles["portfolio__video-play"]}
-          src={play}
-          alt="play button"
-        />
-        <h3 className={styles["portfolio__video-title"]}>WATCH THE VIDEO</h3>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/watch?v=GYkq9Rgoj8E&ab_channel=Apple"
+        >
+          <img src={play} alt="play" />
+        </a>
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles["portfolio__numbers"]}>
+          <h5 className={styles["portfolio__numbers-item"]}>
+            305
+            <span>Web Designs</span>
+          </h5>
+          <h5 className={styles["portfolio__numbers-item"]}>
+            220 <span>Logo Designs</span>
+          </h5>
+          <h5 className={styles["portfolio__numbers-item"]}>
+            52
+            <span>Print Designs</span>
+          </h5>
+          <h5 className={styles["portfolio__numbers-item"]}>
+            88
+            <span>Mobile Apps</span>
+          </h5>
+        </div>
       </div>
     </section>
   );
