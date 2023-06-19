@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTransition, animated } from "react-spring";
 import styles from "./Portfolio.module.css";
 import photo from "../images/portfolio/1.jpg";
 import photo2 from "../images/portfolio/2.jpg";
@@ -12,36 +13,68 @@ import photo9 from "../images/portfolio/9.jpg";
 import play from "../images/play.svg";
 
 const Portfolio = () => {
+  const [filter, setFilter] = useState("all");
+
+  const handleFilter = (category) => {
+    setFilter(category);
+  };
+
+  const portfolioItems = [
+    { image: photo, category: "category-a" },
+    { image: photo2, category: "category-a" },
+    { image: photo3, category: "category-b" },
+    { image: photo4, category: "category-b" },
+    { image: photo5, category: "category-b" },
+    { image: photo6, category: "category-c" },
+    { image: photo7, category: "category-c" },
+    { image: photo8, category: "category-c" },
+    { image: photo9, category: "category-d" },
+  ];
+
+  const filteredItems =
+    filter === "all"
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === filter);
+
+  const transitions = useTransition(filteredItems, {
+    from: { opacity: 0, transform: "translate3d(0, 50%, 0)" },
+    enter: { opacity: 1, transform: "translate3d(0, 0, 0)" },
+    config: { mass: 1, tension: 120, friction: 14 },
+  });
+
   return (
     <section className={styles.portfolio} id="portfolio">
       <div className={styles.container}>
         <div className={styles["portfolio__top"]}>
           <h2 className={styles.title}>Portfolio</h2>
           <div className={styles["portfolio__filter-btn"]}>
-            <button className={styles["portfolio__btn"]} data-filter="all">
+            <button
+              className={styles["portfolio__btn"]}
+              onClick={() => handleFilter("all")}
+            >
               ALL
             </button>
             <button
               className={styles["portfolio__btn"]}
-              data-filter=".category-a"
+              onClick={() => handleFilter("category-a")}
             >
               BRANDING
             </button>
             <button
               className={styles["portfolio__btn"]}
-              data-filter=".category-b"
+              onClick={() => handleFilter("category-b")}
             >
               DESIGN
             </button>
             <button
               className={styles["portfolio__btn"]}
-              data-filter=".category-c"
+              onClick={() => handleFilter("category-c")}
             >
               PHOTOGRAPHY
             </button>
             <button
               className={styles["portfolio__btn"]}
-              data-filter=".category-d"
+              onClick={() => handleFilter("category-d")}
             >
               ILLUSTRATION
             </button>
@@ -50,78 +83,20 @@ const Portfolio = () => {
       </div>
 
       <div className={styles["portfolio__content"]}>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-a"]}`}
-        >
-          <img src={photo} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-a"]}`}
-        >
-          <img src={photo2} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-b"]}`}
-        >
-          <img src={photo3} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-b"]}`}
-        >
-          <img src={photo4} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-b"]}`}
-        >
-          <img src={photo5} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-c"]}`}
-        >
-          <img src={photo6} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-c"]}`}
-        >
-          <img src={photo7} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-c"]}`}
-        >
-          <img src={photo8} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
-        <div
-          className={`${styles["portfolio__item"]} mix ${styles["category-d"]}`}
-        >
-          <img src={photo9} alt="portfolio images" />
-          <a className={styles["portfolio__item-link"]} href="#">
-            SHOW PROJECT
-          </a>
-        </div>
+        {transitions((style, item, t, index) => (
+          <animated.div
+            key={index}
+            className={`${styles["portfolio__item"]} mix ${
+              styles[item.category]
+            }`}
+            style={style}
+          >
+            <img src={item.image} alt="portfolio images" />
+            <a className={styles["portfolio__item-link"]} href="#">
+              SHOW PROJECT
+            </a>
+          </animated.div>
+        ))}
       </div>
 
       <a className={styles["portfolio__add"]} href="#">
@@ -135,29 +110,12 @@ const Portfolio = () => {
       </blockquote>
 
       <div className={styles["portfolio__video"]}>
-        <a href="https://www.youtube.com/watch?v=GYkq9Rgoj8E&ab_channel=Apple">
-          <img src={play} alt="play" />
-        </a>
-      </div>
-
-      <div className={styles.container}>
-        <div className={styles["portfolio__numbers"]}>
-          <h5 className={styles["portfolio__numbers-item"]}>
-            305
-            <span>Web Designs</span>
-          </h5>
-          <h5 className={styles["portfolio__numbers-item"]}>
-            220 <span>Logo Designs</span>
-          </h5>
-          <h5 className={styles["portfolio__numbers-item"]}>
-            52
-            <span>Print Designs</span>
-          </h5>
-          <h5 className={styles["portfolio__numbers-item"]}>
-            88
-            <span>Mobile Apps</span>
-          </h5>
-        </div>
+        <img
+          className={styles["portfolio__video-play"]}
+          src={play}
+          alt="play button"
+        />
+        <h3 className={styles["portfolio__video-title"]}>WATCH THE VIDEO</h3>
       </div>
     </section>
   );
