@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/marketing/static/css/main.4b5a7dac.css",
-    "main.js": "/marketing/static/js/main.5325269a.js",
+    "main.css": "/marketing/static/css/main.9811852a.css",
+    "main.js": "/marketing/static/js/main.f6d0f27c.js",
     "static/js/787.f0714d55.chunk.js": "/marketing/static/js/787.f0714d55.chunk.js",
     "static/media/banana.png": "/marketing/static/media/banana.c23b018b4212a7f2f7ff.png",
     "static/media/gif.gif": "/marketing/static/media/gif.f220ed515ab78c33927e.gif",
@@ -14,6 +14,7 @@
     "static/media/ai.jpg": "/marketing/static/media/ai.dc441046a2bdccae5105.jpg",
     "static/media/2.jpg": "/marketing/static/media/2.bb4a827138227b2e08c9.jpg",
     "static/media/7.jpg": "/marketing/static/media/7.c50d48f280236e1008d1.jpg",
+    "static/media/cola.png": "/marketing/static/media/cola.7f4b1f664f2d5d3c9db4.png",
     "static/media/5.jpg": "/marketing/static/media/5.d4d4e9adc3f459ac1e6d.jpg",
     "static/media/web.jpg": "/marketing/static/media/web.5f126e4621f8726b4ec7.jpg",
     "static/media/team-1.jpg": "/marketing/static/media/team-1.d2128fba6aae9fa166b7.jpg",
@@ -23,6 +24,7 @@
     "static/media/9.jpg": "/marketing/static/media/9.08b956d72c6e21927f06.jpg",
     "static/media/team-2.jpg": "/marketing/static/media/team-2.f3ce54819950e75eb5d5.jpg",
     "static/media/8.jpg": "/marketing/static/media/8.29e3ad7eef3d5cde50c2.jpg",
+    "static/media/bolt.png": "/marketing/static/media/bolt.c2a8d0283d3d4d1c69fe.png",
     "static/media/logo-white1.svg": "/marketing/static/media/logo-white1.1f566a36a0fc83911220377eb827fc66.svg",
     "static/media/logo1.svg": "/marketing/static/media/logo1.8220ecf2b6af9f255b7b8f11f13ca874.svg",
     "static/media/mouse.png": "/marketing/static/media/mouse.d90a55bd4c1ab0629ce0.png",
@@ -39,12 +41,12 @@
     "static/media/play.svg": "/marketing/static/media/play.e0a080dfc636e287e26531b1eab67582.svg",
     "static/media/angle-up.svg": "/marketing/static/media/angle-up.9130849c70f6b0d731c19dad58c555ed.svg",
     "static/media/monitor-icon.svg": "/marketing/static/media/monitor-icon.f8556ceab3c3c5915069.svg",
-    "main.4b5a7dac.css.map": "/marketing/static/css/main.4b5a7dac.css.map",
-    "main.5325269a.js.map": "/marketing/static/js/main.5325269a.js.map",
+    "main.9811852a.css.map": "/marketing/static/css/main.9811852a.css.map",
+    "main.f6d0f27c.js.map": "/marketing/static/js/main.f6d0f27c.js.map",
     "787.f0714d55.chunk.js.map": "/marketing/static/js/787.f0714d55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b5a7dac.css",
-    "static/js/main.5325269a.js"
+    "static/css/main.9811852a.css",
+    "static/js/main.f6d0f27c.js"
   ]
 }
