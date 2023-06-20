@@ -19,16 +19,8 @@ const Blog = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: (
-      <button type="button" className={styles["slick-prev"]}>
-        <img src={ArrowLeft} alt="" />
-      </button>
-    ),
-    nextArrow: (
-      <button type="button" className={styles["slick-next"]}>
-        <img src={ArrowRight} alt="" />
-      </button>
-    ),
+    prevArrow: <img className={styles["slick-prev"]} src={ArrowLeft} alt="" />,
+    nextArrow: <img className={styles["slick-prev"]} src={ArrowRight} alt="" />,
   };
 
   return (
@@ -79,8 +71,7 @@ const Blog = () => {
           <div className={styles["slider-blog__item"]}>
             <a className={styles["slider-blog__item-link"]} href="#">
               <h3 className={styles["slider-blog__item-title"]}>
-                The Rise of Voice Assistants and their Impact on User
-                Interaction
+                Development of voice assistants
               </h3>
             </a>
             <p className={styles["slider-blog__item-descr"]}>

@@ -54,7 +54,7 @@ const Footer = () => {
             faybysh.b@gmail.com
           </a>
         </div>
-        <a className={styles["go-top"]} href="#home">
+        <a className={styles["go-top"]} href="#">
           <img src={Angle} alt="arrow top" />
         </a>
       </div>

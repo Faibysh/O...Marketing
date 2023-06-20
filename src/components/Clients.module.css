@@ -101,3 +101,107 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.bolt {
+  height: 60px;
+  width: 130px;
+}
+
+.cola {
+  height: 50px;
+  width: 190px;
+}
+
+@media (max-width: 1440px) {
+
+  .container {
+    max-width: 1140px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .clients {
+    padding: 50px 0 75px;
+  }
+
+  .clients__list {
+    justify-content: space-around;
+  }
+
+  .bolt {
+    height: 50px;
+    width: 110px;
+  }
+
+  .cola {
+    height: 40px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .clients {
+    padding: 40px 0 60px;
+  }
+
+  .bolt {
+    height: 40px;
+    width: 90px;
+  }
+
+  .cola {
+    height: 30px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .clients__list {
+    flex-wrap: wrap;
+  }
+
+  .bolt,
+  .cola {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

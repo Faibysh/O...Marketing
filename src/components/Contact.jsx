@@ -40,6 +40,7 @@
 //     setMessage("");
 
 //     toast.success("Thank you, your message has been sent successfully");
+//     window.location.href = "#home";
 //   };
 
 //   return (
@@ -109,6 +110,11 @@ const Contact = () => {
     const emailRegex = /\S+@\S+\.\S+/;
     if (!emailRegex.test(email)) {
       toast.error("Please enter a valid email address");
+      return;
+    }
+
+    if (!message.trim()) {
+      toast.error("Please enter your message");
       return;
     }
 

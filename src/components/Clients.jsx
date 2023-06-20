@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Clients.module.css";
 
-import Client1 from "../images/clients/1.png";
-import Client2 from "../images/clients/2.png";
-import Client3 from "../images/clients/3.png";
-import Client4 from "../images/clients/4.png";
-import Client5 from "../images/clients/5.png";
+import Intertop from "../images/clients/intertop.png";
+import Vizor from "../images/clients/vizor.png";
+import Cola from "../images/clients/cola.png";
+import Uklon from "../images/clients/uklon.png";
+import Bolt from "../images/clients/bolt.png";
 
 const Clients = () => {
   return (
@@ -13,19 +13,19 @@ const Clients = () => {
       <div className={styles.container}>
         <ul className={styles["clients__list"]}>
           <li>
-            <img src={Client1} alt="client1" />
+            <img src={Intertop} alt="intertop" />
           </li>
           <li>
-            <img src={Client2} alt="client2" />
+            <img src={Vizor} alt="vizor" />
           </li>
           <li>
-            <img src={Client3} alt="client3" />
+            <img className={styles.cola} src={Cola} alt="cola" />
           </li>
           <li>
-            <img src={Client4} alt="client4" />
+            <img src={Uklon} alt="uklon" />
           </li>
           <li>
-            <img src={Client5} alt="client5" />
+            <img className={styles.bolt} src={Bolt} alt="bolt" />
           </li>
         </ul>
       </div>

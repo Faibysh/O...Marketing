@@ -26,7 +26,7 @@ const Header = () => {
               </button>
               <ul className={styles["menu__list"]}>
                 <li className={styles["menu__list-item"]}>
-                  <a className={styles["menu__list-link"]} href="#home">
+                  <a className={styles["menu__list-link"]} href="#">
                     HOME
                   </a>
                 </li>
