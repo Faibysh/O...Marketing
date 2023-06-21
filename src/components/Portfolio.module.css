@@ -120,6 +120,11 @@ body {
   outline-color: #FCBB08;
 }
 
+.portfolio__btn:hover {
+  border-bottom: 1px solid #FCBB08;
+  cursor: pointer;
+}
+
 .portfolio__btn+.portfolio__btn {
   margin-left: 25px;
 }

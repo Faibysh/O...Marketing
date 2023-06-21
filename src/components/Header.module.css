@@ -109,7 +109,6 @@ body {
   align-items: flex-end;
 }
 
-.logo {}
 
 .menu__btn {
   display: none;
@@ -158,8 +157,61 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .logo {
+    align-self: flex-start;
+  }
+
   .menu__list {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+    z-index: 999;
+  }
+
+  .menu__list.open {
+    display: flex;
+  }
+
+  .menu__list-item {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu__list-link {
+    padding: 0px;
+    font-size: 12px;
+    line-height: 7px;
+    text-transform: uppercase;
+    color: #373A39;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.6px;
+    transition: all .5s;
+  }
+
+  .menu__list-link:hover {
+    border-bottom-color: #FCBB08;
   }
 
   .menu__btn {
@@ -170,29 +222,48 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-right: 35px;
   }
 
   .menu__btn:focus {
     outline: none;
   }
 
-  .menu__list-item {
-    margin: 15px 0;
-    display: block;
+  .menu__btn-icon {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
   }
 
-  .menu__list-link {
-    padding: 0;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #373A39;
-    border-bottom: 1px solid transparent;
-    transition: all 0.5s;
+  .menu__btn-icon:before,
+  .menu__btn-icon:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #373A39;
+    transition: transform 0.5s ease-in-out;
   }
 
-  .menu__list-link:hover {
-    border-bottom-color: #FCBB08;
+  .menu__btn-icon:before {
+    top: 70%;
+    transform: translateY(50%);
+  }
+
+
+  .menu__btn-icon:after {
+    bottom: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu__btn.open .menu__btn-icon:before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .menu__btn.open .menu__btn-icon:after {
+    transform: translateY(50%) rotate(-45deg);
   }
 }
 
