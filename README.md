@@ -16,6 +16,10 @@ The B...Marketing website is built using the following technologies and tools:
 
 #### React:
 
+#### JavaScript:
+
+The programming language used for developing dynamic functionality and user interaction.
+
 The core framework for front-end development, providing high performance and rapid response to changes.
 JavaScript: The programming language used for developing dynamic functionality and user interaction.
 
@@ -31,16 +35,20 @@ Some popular libraries are used to enhance the functionality of the site
 
 Clone the repository to your local machine:
 
-`git clone https://github.com/your-username/b-marketing.git`
+#### `git clone https://github.com/your-username/b-marketing.git`
+
 Open the terminal and navigate to the project folder:
 
-`cd b-marketing`
+#### `cd b-marketing`
+
 Install project dependencies:
 
-`npm install`
+#### `npm install`
+
 Run the project:
 
-`npm start`
+#### `npm start`
+
 The project will be running at http://localhost:3000.
 
 ## Conclusion
