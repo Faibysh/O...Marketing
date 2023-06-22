@@ -16,9 +16,9 @@ The B...Marketing website is built using the following technologies and tools:
 
 #### React:
 
-#### JavaScript:
-
 The programming language used for developing dynamic functionality and user interaction.
+
+#### JavaScript:
 
 The core framework for front-end development, providing high performance and rapid response to changes.
 JavaScript: The programming language used for developing dynamic functionality and user interaction.
